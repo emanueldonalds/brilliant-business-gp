@@ -10067,7 +10067,8 @@ hr.light {
 }
 @media (min-width: 992px) {
   #mainNav {
-    box-shadow: none;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    background-color: #fff;
   }
   #mainNav .navbar-brand {
     color: rgba(0, 0, 0, 1);
@@ -10113,7 +10114,7 @@ hr.light {
 header.masthead {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 4.5rem);
-  background: linear-gradient(to bottom, var(--masthead-img-overlay) 0%, var(--masthead-img-overlay) 100%), url("../assets/img/results.jpg");
+  background: linear-gradient(to bottom, var(--masthead-img-overlay) 0%, var(--masthead-img-overlay) 100%), url("assets/img/results.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;

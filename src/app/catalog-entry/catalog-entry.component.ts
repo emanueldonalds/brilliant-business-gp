@@ -8,10 +8,14 @@ import { Component, Input, OnInit } from '@angular/core';
 export class CatalogEntryComponent implements OnInit {
   @Input() url = "";
   @Input() name = "No name";
+  @Input() imgName = "";
+
+  imgSrc = "";
 
   constructor() { }
 
   ngOnInit(): void {
+    this.imgSrc = 'assets/img/catalogs/' + this.imgName +'.jpg';
   }
 
 }

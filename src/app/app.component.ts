@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import {TranslateService} from '@ngx-translate/core';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-root',
@@ -10,7 +10,14 @@ export class AppComponent {
   title = 'brilliant-business';
 
   constructor(translate: TranslateService) {
-    translate.setDefaultLang('sv');
-    translate.use('sv');
+    if (localStorage.getItem('lang')) {
+      var lang: string = localStorage.getItem('lang') as string;
+      translate.setDefaultLang(lang);
+      translate.use(lang);
+    }
+    else {
+      translate.setDefaultLang('sv');
+      translate.use('sv');
+    }
   }
 }

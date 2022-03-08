@@ -24,8 +24,8 @@
   --white: #fff;
   --gray: #6c757d;
   --gray-dark: #343a40;
-  --primary: #1e4725;
-  --secondary: #15311a;
+  --primary: #6a796d;
+  --secondary: #0f2f12;
   --success: #28a745;
   --info: #17a2b8;
   --warning: #ffc107;
@@ -92,8 +92,10 @@ h1, h2, h3, h4, h5, h6 {
 
 p {
   margin-top: 0;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
+
+
 
 abbr[title],
 abbr[data-original-title] {
@@ -116,7 +118,7 @@ ol,
 ul,
 dl {
   margin-top: 0;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 
 ol ol,
@@ -10098,10 +10100,9 @@ hr.light {
 }
 
 .text-backdrop {
-  background: rgba(46, 46, 46, 0.8);
+  background: rgba(46, 46, 46, 0.7);
   padding: 2em;
-  border-radius: 0  em;
-
+  border-radius: 0 em;
 }
 
 header.masthead {

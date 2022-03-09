@@ -1,0 +1,13 @@
+.catalog {
+    padding-top: 2em;
+}
+  
+.catalog img {
+    max-height: 100%;
+    max-width: 100%;
+    box-shadow: 0.1em 0.1em 0.5em 0.01em rgb(0, 0, 0, 0.7);
+}
+
+.img-name {
+    padding-top: 1em;
+}

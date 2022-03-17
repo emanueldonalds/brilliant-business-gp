@@ -1,0 +1,16 @@
+.logo {
+    width: 80%;
+}
+
+.logo-small {
+    width: 50%;
+}
+
+.customer-logo {
+    margin-top: 2em;
+    vertical-align: middle;     
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 176px;
+}

@@ -14,3 +14,9 @@
     justify-content: center;
     min-height: 176px;
 }
+
+.text-backdrop {
+    background: rgba(145, 165, 149, 0.637);
+    padding: 2em;
+    border-radius: 0 em;
+  }

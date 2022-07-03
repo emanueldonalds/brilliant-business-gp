@@ -6,3 +6,5 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 
 ## Deploy
 Run the deploy.bat script.
+
+Logo color: #37886e

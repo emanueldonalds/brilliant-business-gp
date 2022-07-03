@@ -24,8 +24,8 @@
   --white: #fff;
   --gray: #6c757d;
   --gray-dark: #343a40;
-  --primary: #6a796d;
-  --secondary: #3a463c;
+  --primary: #91a595;
+  --secondary: #667c6a;
   --success: #28a745;
   --info: #17a2b8;
   --warning: #ffc107;
@@ -10099,11 +10099,6 @@ hr.light {
   }
 }
 
-.text-backdrop {
-  background: rgba(46, 46, 46, 0.7);
-  padding: 2em;
-  border-radius: 0 em;
-}
 
 header.masthead {
   padding-top: 10rem;

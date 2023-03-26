@@ -23,12 +23,12 @@
   --cyan: #17a2b8;
   --white: #fff;
   --gray: #6c757d;
-  --gray-dark: #343a40;
-  --primary: #6a796d;
-  --secondary: #3a463c;
+  --gray-dark: #403e34;
+  --primary: #b69d3a;
+  --secondary: #757575;
   --success: #28a745;
   --info: #17a2b8;
-  --warning: #ffc107;
+  --warning: #ffc107; 
   --danger: #dc3545;
   --light: #f8f9fa;
   --dark: #343a40;
@@ -6161,7 +6161,7 @@ button.bg-danger:focus {
 }
 
 .bg-light {
-  background-color: #f8f9fa !important;
+  background-color: #e1e1e1 !important;
 }
 
 a.bg-light:hover, a.bg-light:focus,

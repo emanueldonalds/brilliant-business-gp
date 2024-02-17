@@ -20,7 +20,6 @@ export class CatalogsComponent implements OnInit {
         }
         this.catalogGroups[catalog.category].push(catalog);
       });
-      console.log('cats', this.catalogGroups);
     });
   }
 

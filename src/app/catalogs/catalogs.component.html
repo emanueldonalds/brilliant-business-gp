@@ -6,15 +6,8 @@
           <h1 class="mt-0">{{'PROFILE_CATALOGS' | translate}}</h1>
           <hr class="divider my-4" />
         </div>
-
-        <div class="row catalog-category">
-          <h2 class="mt-0 col-md-12">{{'GIFT_ADVERTISING' | translate}}</h2>
-
             <app-catalogs-group *ngFor="let g of catalogGroups | keyvalue" [group]="g.value"></app-catalogs-group>
-
-
         </div>
-      </div>
     </div>
   </div>
 </section>

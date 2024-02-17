@@ -1,5 +1,4 @@
 <div class="row catalog-category">
-  <h2 class="mt-0 col-md-12">{{categoryName}}</h2>
-
+  <h2 class="mt-0 col-md-12">{{group[0].category}}</h2>
   <app-catalog-entry *ngFor="let catalog of group" class="col-md-3" [catalog]="catalog"></app-catalog-entry>
 </div>

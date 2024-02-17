@@ -12,6 +12,7 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { FooterComponent } from './footer/footer.component';
 import { RouterModule } from '@angular/router';
 import { CatalogEntryComponent } from './catalog-entry/catalog-entry.component';
+import { CatalogsGroupComponent } from './catalogs-group/catalogs-group.component';
 
 export function createTranslateLoader(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -25,7 +26,8 @@ export function createTranslateLoader(http: HttpClient) {
     CatalogsComponent,
     ContactComponent,
     FooterComponent,
-    CatalogEntryComponent
+    CatalogEntryComponent,
+    CatalogsGroupComponent
   ],
   imports: [
     BrowserModule,

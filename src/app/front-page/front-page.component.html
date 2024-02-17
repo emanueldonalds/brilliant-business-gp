@@ -1,13 +1,19 @@
 <header class="masthead">
   <div class="row h-100 align-items-center justify-content-center text-center">
-    <div class="row w-100 text-backdrop align-items-center justify-content-center text-center">
+    <div
+      class="row w-100 text-backdrop align-items-center justify-content-center text-center"
+    >
       <div class="col-lg-10 align-self-end">
-        <h1 class=" text-white font-weight-bold">Brilliant Business</h1>
+        <h1 class="text-white font-weight-bold">Brilliant Business</h1>
         <hr class="divider my-4" />
       </div>
       <div class="col-lg-8 align-self-baseline">
-        <p class="text-white-75 mb-5 tight-fit ">{{'BANNER_CONTENT' | translate }}</p>
-        <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">{{'READ_MORE' | translate }}!</a>
+        <p class="text-white-75 mb-5 tight-fit">
+          {{ "BANNER_CONTENT" | translate }}
+        </p>
+        <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about"
+          >{{ "READ_MORE" | translate }}!</a
+        >
       </div>
     </div>
   </div>
@@ -17,9 +23,14 @@
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-lg-8">
-        <span class="text-white-75 mb5" [innerHTML]="'ABOUT_US_CONTENT' | translate "></span>
+        <span
+          class="text-white-75 mb5"
+          [innerHTML]="'ABOUT_US_CONTENT' | translate"
+        ></span>
         <div class="justify-content-center text-center">
-          <a class="btn btn-light btn-xl js-scroll-trigger" href="#contact">{{'CONTACT_US' | translate}}!</a>
+          <a class="btn btn-light btn-xl js-scroll-trigger" href="#contact"
+            >{{ "CONTACT_US" | translate }}!</a
+          >
         </div>
       </div>
     </div>
@@ -29,51 +40,115 @@
 <section class="page-section" id="about">
   <div class="container">
     <div class="row justify-content-center">
-        <div class="col-lg-12 text-center">
-          <h2 class="mt-0">{{'SOME_CUSTOMERS' | translate}}</h2>
-          <hr class="divider my-4" />
+      <div class="col-lg-12 text-center">
+        <h2 class="mt-0">{{ "SOME_CUSTOMERS" | translate }}</h2>
+        <hr class="divider my-4" />
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-lg-3 customer-logo">
+          <img
+            class="logo-small"
+            src="../../assets/img/customers/interante.png"
+          />
         </div>
-        <div class="row justify-content-center">
-          <div class="col-lg-3 customer-logo"><img class="logo-small" src="../../assets/img/customers/interante.png"></div>
-          <div class="col-lg-3 customer-logo"><img class="logo" src="../../assets/img/customers/ica.png"></div>
-          <div class="col-lg-3 customer-logo"><img class="logo" src="../../assets/img/customers/paf.jpg"></div>
-          <div class="col-lg-3 customer-logo"><img class="logo" src="../../assets/img/customers/viking_line.png"></div>
-          <div class="col-lg-3 customer-logo"><img class="logo" src="../../assets/img/customers/eckero.png"></div>
-          <div class="col-lg-3 customer-logo"><img class="logo-small" src="../../assets/img/customers/agapi_1.png"></div>
-          <div class="col-lg-3 customer-logo"><img class="logo" src="../../assets/img/customers/biskopsudden_1.png"></div>
-          <div class="col-lg-3 customer-logo"><img class="logo-small" src="../../assets/img/customers/certico.png"></div>
-          <div class="col-lg-3 customer-logo"><img class="logo" src="../../assets/img/customers/optinova.png"></div>
-          <div class="col-lg-3 customer-logo"><img class="logo" src="../../assets/img/customers/city_mail.png"></div>
-          <div class="col-lg-3 customer-logo"><img class="logo" src="../../assets/img/customers/healthy_lane.png"></div>
-          <div class="col-lg-3 customer-logo"><img class="logo-small" src="../../assets/img/customers/safsen.jpg"></div>
-          <div class="col-lg-3 customer-logo"><img class="logo" src="../../assets/img/customers/wave.png"></div>
-          <div class="col-lg-3 customer-logo"><h2>Brf Glasberget</h2></div>
-          <div class="col-lg-3 customer-logo"><img class="logo" src="../../assets/img/customers/gameroom.svg"></div>
-          <div class="col-lg-3 customer-logo"><img class="logo" src="../../assets/img/customers/xshore.png"></div>
-          <div class="col-lg-3 customer-logo"><img class="logo" src="../../assets/img/customers/swedax.jpg"></div>
-          <div class="col-lg-3 customer-logo"><img class="logo" src="../../assets/img/customers/autoexperten.jpg"></div>
-          <div class="col-lg-3 customer-logo"><img class="logo" src="../../assets/img/customers/lagting.svg"></div>
-          <div class="col-lg-3 customer-logo"><img class="logo" src="../../assets/img/customers/alr.svg"></div>
+        <div class="col-lg-3 customer-logo">
+          <img class="logo-small" src="../../assets/img/customers/ica.png" />
         </div>
+        <div class="col-lg-3 customer-logo">
+          <img class="logo" src="../../assets/img/customers/paf.jpg" />
+        </div>
+        <div class="col-lg-3 customer-logo">
+          <img class="logo" src="../../assets/img/customers/viking_line.png" />
+        </div>
+        <div class="col-lg-3 customer-logo">
+          <img class="logo" src="../../assets/img/customers/eckero.png" />
+        </div>
+        <div class="col-lg-3 customer-logo logo-trim">
+          <img
+            class="logo"
+            src="../../assets/img/customers/finnlines-vector-logo.svg"
+          />
+        </div>
+        <div class="col-lg-3 customer-logo">
+          <img class="logo" src="../../assets/img/customers/wasaline.png" />
+        </div>
+        <div class="col-lg-3 customer-logo">
+          <img
+            class="logo-small"
+            src="../../assets/img/customers/agapi_1.png"
+          />
+        </div>
+        <div class="col-lg-3 customer-logo">
+          <img
+            class="logo"
+            src="../../assets/img/customers/biskopsudden_1.png"
+          />
+        </div>
+        <div class="col-lg-3 customer-logo">
+          <img
+            class="logo-small"
+            src="../../assets/img/customers/certico.png"
+          />
+        </div>
+        <div class="col-lg-3 customer-logo">
+          <img class="logo" src="../../assets/img/customers/optinova.png" />
+        </div>
+        <div class="col-lg-3 customer-logo">
+          <img class="logo" src="../../assets/img/customers/city_mail.png" />
+        </div>
+        <div class="col-lg-3 customer-logo">
+          <img class="logo" src="../../assets/img/customers/healthy_lane.png" />
+        </div>
+        <div class="col-lg-3 customer-logo">
+          <img class="logo-small" src="../../assets/img/customers/safsen.jpg" />
+        </div>
+        <div class="col-lg-3 customer-logo">
+          <img class="logo" src="../../assets/img/customers/wave.png" />
+        </div>
+        <div class="col-lg-3 customer-logo"><h2>Brf Glasberget</h2></div>
+        <div class="col-lg-3 customer-logo">
+          <img class="logo" src="../../assets/img/customers/gameroom.svg" />
+        </div>
+        <div class="col-lg-3 customer-logo">
+          <img class="logo" src="../../assets/img/customers/xshore.png" />
+        </div>
+        <div class="col-lg-3 customer-logo">
+          <img class="logo" src="../../assets/img/customers/swedax.jpg" />
+        </div>
+        <div class="col-lg-3 customer-logo">
+          <img class="logo" src="../../assets/img/customers/autoexperten.jpg" />
+        </div>
+        <div class="col-lg-3 customer-logo">
+          <img class="logo" src="../../assets/img/customers/lagting.svg" />
+        </div>
+        <div class="col-lg-3 customer-logo">
+          <img class="logo" src="../../assets/img/customers/alr.svg" />
+        </div>
+      </div>
     </div>
   </div>
 </section>
 
 <section class="page-section bg-primary" id="about">
   <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-lg-12 text-center">
-          <h2 class="text-white-75 mt-0">{{'PROFILE_CATALOGS' | translate}}</h2>
-          <hr class="divider light my-4" />
-        </div>
+    <div class="row justify-content-center">
+      <div class="col-lg-12 text-center">
+        <h2 class="text-white-75 mt-0">{{ "PROFILE_CATALOGS" | translate }}</h2>
+        <hr class="divider light my-4" />
+      </div>
+      <div class="col-lg-12">
+        <p class="text-white-75 mb-5 text-center">
+          {{ "PROFILE_CATALOGS_CONTENT" | translate }}
+        </p>
         <div class="col-lg-12">
-          <p class="text-white-75 mb-5 text-center">{{'PROFILE_CATALOGS_CONTENT' | translate}}
-          </p>
-          <div class="col-lg-12">
-            <div class="justify-content-center text-center">
-              <a class="btn btn-light btn-xl js-scroll-trigger" href="/catalogs">{{'PROFILE_CATALOGS' | translate}}</a>
-            </div>
+          <div class="justify-content-center text-center">
+            <a
+              class="btn btn-light btn-xl js-scroll-trigger"
+              href="/catalogs"
+              >{{ "PROFILE_CATALOGS" | translate }}</a
+            >
           </div>
+        </div>
       </div>
     </div>
   </div>

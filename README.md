@@ -10,3 +10,4 @@ brilliantbusiness.nu
 
 ## Deploy
 Run the deploy.sh script and merge to master.
+

@@ -1,4 +1,4 @@
-param([string]$path = ".\", [int]$minSize = 0, [switch]$jpg, [switch]$png, [switch]$gif, [switch]$verbose, [switch]$report)
+param([string]$path = ".\images", [int]$minSize = 0, [switch]$jpg, [switch]$png, [switch]$gif, [switch]$verbose, [switch]$report)
 
 function Get-Size
 {
@@ -26,15 +26,15 @@ function Compress-Images([string]$type) {
         echo ""
         echo "Compressing $type files with parameters: $params"
     }
-    
-    Get-ChildItem $path -Recurse -Include "*.$type" | 
+
+    Get-ChildItem $path -Recurse -Include "*.$type" |
         Where-Object {
             $_.Length/1kb -gt $minSize
-        } | 
+        } |
         Sort-Object -Descending length |
         ForEach-Object {
             $file = $_.FullName
-        
+
             if ($report) {
                 $fSize = Get-Size-Kb($file)
                 echo "$file - $fSize"
@@ -43,7 +43,7 @@ function Compress-Images([string]$type) {
                     echo "Compressing $file"
                     $fileStartSize = Get-Size-Kb($file)
                 }
-        
+
                 # compress image
                 if ($report -eq $False) {
                     iex "magick $file $params $file"
@@ -83,5 +83,5 @@ if ($png -OR $compressAll) {
 $endSize = Get-Size $path
 echo ""
 echo "DONE"
-echo "Starting sizes: $startSize" 
+echo "Starting sizes: $startSize"
 echo "Ending sizes: $endSize"

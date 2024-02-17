@@ -9,4 +9,4 @@ Run `ng serve`. Available at `http://localhost:4200/`.
 brilliantbusiness.nu
 
 ## Deploy
-Run the deploy.bat script.
+Run the deploy.sh script and merge to master.

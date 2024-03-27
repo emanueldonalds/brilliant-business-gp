@@ -9,5 +9,5 @@ Run `ng serve`. Available at `http://localhost:4200/`.
 brilliantbusiness.nu
 
 ## Deploy
-Run the deploy.sh script and merge to master.
 
+Create a new branch, run deploy.sh, publish branch, create PR to master and lastly merge the PR.

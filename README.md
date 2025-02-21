@@ -1,5 +1,13 @@
 # BrilliantBusiness
 
+## Requirements
+
+npm and angular cli installed
+
+## Setup
+
+npm install
+
 ## Development server
 
 Run `ng serve`. Available at `http://localhost:4200/`.
